@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "MamvatamApp",
+    "name": "Mamvatam App",
     "slug": "MamvatamApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/icon-mamvatam.png",
     "scheme": "mamvatamapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,13 +13,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/images/icon-mamvatam.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.shubham2468.MamvatamApp"
     },
     "web": {
       "output": "static",
@@ -30,12 +29,12 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "image": "./assets/images/dynamic-dna-helix.png",
+          "imageWidth": 400,
+          "resizeMode": "cover",
+          "backgroundColor": "#050515",
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#050515"
           }
         }
       ]
@@ -43,6 +42,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "036a3720-a711-4135-a994-36eea025e940"
+      }
     }
   }
 }
